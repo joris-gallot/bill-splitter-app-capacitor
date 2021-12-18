@@ -4,12 +4,15 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3004"
   },
   "dependencies": {
     "@capacitor/core": "^3.3.3",
     "@capacitor/ios": "^3.3.3",
+    "json-server": "^0.17.0",
     "vue": "^3.2.25",
+    "vue-query": "^1.14.0",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {

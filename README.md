@@ -14,6 +14,12 @@ npm ci
 npm run dev
 ```
 
+## Run json server
+
+```bash
+npm run server
+```
+
 ## Capacitor config
 
 To run the app on ios you need to create the Capacitor config file (`capacitor.config.ts`)
