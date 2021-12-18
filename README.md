@@ -1,4 +1,6 @@
-# Bill Splitter Capacitor App
+# Bill Splitter App - Test Capacitor
+
+App design from: https://dribbble.com/shots/14817879-Bill-Splitter-App
 
 ## Install dependencies
 
