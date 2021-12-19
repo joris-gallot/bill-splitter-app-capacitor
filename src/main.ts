@@ -3,6 +3,7 @@ import {
   faChevronLeft,
   faEllipsisV,
   faInfo,
+  faLongArrowAltRight,
   faPlus,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +13,14 @@ import App from "./App.vue";
 import router from "./router";
 import "./style.css";
 
-library.add(faInfo, faPlus, faSearch, faChevronLeft, faEllipsisV);
+library.add(
+  faInfo,
+  faPlus,
+  faSearch,
+  faChevronLeft,
+  faEllipsisV,
+  faLongArrowAltRight
+);
 
 const app = createApp(App).use(router);
 

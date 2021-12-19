@@ -42,27 +42,32 @@
     {
       "id": 9,
       "name": "Glenna",
-      "avatar": "https://avatars.dicebear.com/api/big-ears/18.svg"
+      "avatar": "https://avatars.dicebear.com/api/big-ears/18.svg",
+      "color": "#3B82F6"
     },
     {
       "id": 10,
       "name": "Elwyn",
-      "avatar": "https://avatars.dicebear.com/api/big-ears/19.svg"
+      "avatar": "https://avatars.dicebear.com/api/big-ears/19.svg",
+      "color": "#6366F1"
     },
     {
       "id": 11,
       "name": "Kurtis",
-      "avatar": "https://avatars.dicebear.com/api/big-ears/20.svg"
+      "avatar": "https://avatars.dicebear.com/api/big-ears/20.svg",
+      "color": "#F37317"
     },
     {
       "id": 12,
       "name": "Nicholas",
-      "avatar": "https://avatars.dicebear.com/api/big-ears/21.svg"
+      "avatar": "https://avatars.dicebear.com/api/big-ears/21.svg",
+      "color": "#257051"
     },
     {
       "id": 13,
       "name": "Lucio",
-      "avatar": "https://avatars.dicebear.com/api/big-ears/22.svg"
+      "avatar": "https://avatars.dicebear.com/api/big-ears/22.svg",
+      "color": "#BF26D3"
     }
   ],
   "me": {

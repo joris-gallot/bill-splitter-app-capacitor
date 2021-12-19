@@ -1,18 +1,16 @@
 <script lang="ts" setup>
-import { computed } from "vue";
-import { useQuery } from "vue-query";
+import { User } from "@/types/User";
+import { defineProps, PropType } from "vue";
 
-const fetchSplitWith = fetch("http://localhost:3004/split-with").then((res) =>
-  res.json()
-);
-const { data: users, isLoading } = useQuery("split-with", () => fetchSplitWith);
-
-const firstUsers = computed(() => {
-  if (!isLoading.value && users.value && users.value.length) {
-    return users.value.length > 3 ? users.value.slice(0, 3) : users.value;
-  }
-
-  return [];
+defineProps({
+  users: {
+    type: Object as PropType<User[]>,
+    required: true,
+  },
+  isLoading: {
+    type: Boolean,
+    required: true,
+  },
 });
 </script>
 
@@ -71,7 +69,7 @@ const firstUsers = computed(() => {
         <p v-if="isLoading">Loading...</p>
         <div v-else class="flex items-center -space-x-3">
           <img
-            v-for="(user, i) in firstUsers"
+            v-for="(user, i) in users"
             :key="i"
             :src="user.avatar"
             class="rounded-full w-10 h-10 border-2 border-purple-500 bg-white"
