@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import { useQuery } from "vue-query";
 
-const fetchMe = fetch("http://localhost:3004/split-with").then((res) =>
+const fetchSplitWith = fetch("http://localhost:3004/split-with").then((res) =>
   res.json()
 );
-const { data: users, isLoading } = useQuery("split-with", () => fetchMe);
+const { data: users, isLoading } = useQuery("split-with", () => fetchSplitWith);
 </script>
 
 <template>
@@ -18,6 +18,7 @@ const { data: users, isLoading } = useQuery("split-with", () => fetchMe);
       items-start
       justify-between
       gap-14
+      shadow-xl
     "
   >
     <div class="flex flex-col justify-between space-y-6">
