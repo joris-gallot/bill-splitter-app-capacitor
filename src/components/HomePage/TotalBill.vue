@@ -27,7 +27,7 @@ const { data: users, isLoading } = useQuery("split-with", () => fetchSplitWith);
         <span class="text-3xl font-bold">$750.86</span>
       </div>
 
-      <button
+      <router-link
         class="
           shadow-xl
           rounded-xl
@@ -37,9 +37,10 @@ const { data: users, isLoading } = useQuery("split-with", () => fetchSplitWith);
           bg-purple-500
           text-white
         "
+        :to="{ name: 'Ticket' }"
       >
         Split now
-      </button>
+      </router-link>
     </div>
 
     <div class="flex flex-col space-y-3">
